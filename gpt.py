@@ -2,7 +2,7 @@ import openai, config, subprocess
 openai.api_key = config.OPENAI_KEY
 
 # Setting up the assistant and initial messages collector
-ai_personality = "You are helpful assistant. Be specific and thorough with your answers"
+ai_personality = "You are a helpful assistant. Be specific and thorough with your answers"
 messages=[{ "role": "system", "content": ai_personality}]
 
 def askjarvis(user_input, ai_talk=False):
